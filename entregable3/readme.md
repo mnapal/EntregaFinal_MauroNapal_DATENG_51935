@@ -17,7 +17,7 @@ Los archivos a tener en cuenta son:
     * `ETL_Entregable3.py`: Script de Spark que ejecuta el ETL.
 
 # Pasos para ejecutar el ETL
-1. Posicionarse en la carpeta `otros/entregable_3`. A esta altura debería ver el archivo `docker-compose.yaml`.
+1. Posicionarse en la carpeta `entregable_3`. A esta altura debería ver el archivo `docker-compose.yaml`.
 
 2. Crear las siguientes carpetas a la misma altura del `docker-compose.yaml`.
 ```bash
