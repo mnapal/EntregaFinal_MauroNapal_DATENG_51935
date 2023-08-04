@@ -62,7 +62,7 @@ class ETL_Spark:
         Args:
             process_date (str): Fecha de proceso en formato YYYY-MM-DD
         """
-        print(">>> [execute] Ejecutando ETL...")
+        print(f">>> [execute] Ejecutando ETL... {process_date}")
 
         # Extraemos datos de la API
         df_api = self.extract()
@@ -73,20 +73,3 @@ class ETL_Spark:
         # Cargamos los datos en Redshift
         self.load(df_transformed)
 
-    def extract(self):
-        """
-        Extrae datos de la API
-        """
-        print(">>> [E] Extrayendo datos de la API...")
-
-    def transform(self, df_original):
-        """
-        Transforma los datos
-        """
-        print(">>> [T] Transformando datos...")
-
-    def load(self, df_final):
-        """
-        Carga los datos transformados en Redshift
-        """
-        print(">>> [L] Cargando datos en Redshift...")
